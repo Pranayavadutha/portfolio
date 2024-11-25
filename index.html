@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://kit.fontawesome.com/143814d578.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav id="header">
+                <div class="nav-logo"> 
+                   <!-- <p class="nav-name">Logo</p>-->
+                </div>
+                <div class="nav-menu" id="myNavMenu">
+                    <ul class="nav_menu_list">
+                        <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link active-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link active-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link active-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                    </ul>
+                </div>
+                <div class="mode">
+                    <div class="moon-sun" id="toggel-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                    </div>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="fa-solid fa-bars" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+            <main class="wrapper">
+                <section class="featured-box" id="home">
+                    <div class="featured-text">
+                        <div class="hello">
+                            <p>Hello I,m</p>
+                        </div>
+                        <div class="featured-name">
+                            <span class="typedText"></span>
+                        </div>
+                        <div class="text-info">
+                            <p>I'm Pranay Avadutha, a passionate and driven B.Tech CSE student at Anurag University Hyderabad.</p>
+                        </div>
+                        <!--<div class="text-btn">
+                            <button class="btn hire-btn">Hire Me</button>
+                            <button class="btn">Download CV <i class="fa-solid fa-file"></i></button>
+                        </div>
+                    -->
+                        <div class="social_icons">
+                            <div class="icon_circle"></div>
+                            <div class="icon">
+                                <a href="https://www.linkedin.com/in/pranay-avadutha/" target="_blank"> <i class="fa-brands fa-linkedin"> </i></a>
+                            </div>
+                            <div class="icon"><a href="https://github.com/Pranayavadutha" target="_blank"> <i class="fa-brands fa-github"> </i></a></div>
+                            <div class="icon"><a href="https://x.com/PranayAvadutha" target="_blank"> <i class="fa-brands fa-twitter"> </i></a></div>
+                            <div class="icon"><a href="https://www.instagram.com/pranayprannu5/?igsh=dXJpbjFvM3V1ajA1" target="_blank"> <i class="fa-brands fa-instagram"> </i></a></div>
+                    </div>
+                    </div>
+                    <div class="featured-image">
+                        <div class="image">
+                            <img src="reharsalme.jpg" alt="me">
+                        </div>
+                    </div>
+                </section>
+                <!----about box--->
+                <section class="section" id="about">
+                    <div class="top-header">
+                        <h1>About me</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="about-info">
+                                <figure class="about-me">
+                                    <figcaption class="about-me">
+                                        <img src="reharsalme.jpg"  class="profile">
+                                        <h2>Pranay Avadutha</h2>
+                                        <p>
+                                        As a tech enthusiast, I've explored various programming languages and technologies, including HTML, CSS, JavaScript, Bootstrap, and Python. I have experience in developing websites and web pages.
+ 
+                                            </p>
+                                    </figcaption>
+                                </figure>
+                                <button class="about-me-btn">Explore My Projects</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="skill">
+                                <div class="skill-box">
+                                    <span class="title">HTML</span>
+                                    <div class="skill-bar">
+                                        <span class="skill-per html">
+                                            <span  class="tooltip"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skill-box">
+                                    <span class="title">CSS</span>
+                                    <div class="skill-bar">
+                                        <span class="skill-per css">
+                                            <span class="tooltip"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skill-box">
+                                    <span class="title">JavaScript</span>
+                                    <div class="skill-bar">
+                                        <span class="skill-per javascript">
+                                            <span class="tooltip"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skill-box">
+                                    <span class="title">Python</span>
+                                    <div class="skill-bar">
+                                        <span class="skill-per python">
+                                            <span class="tooltip"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                <!---project box-->
+                <section class="section" id="projects">
+                   <div class="top-header">
+                    <h1>Projects</h1>
+                   </div> 
+                   <div class="project-container">
+                    <div class="project-box">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3>My Projects</h3>
+                        <label><a href="https://time-management-website-two.vercel.app/" target="_blank" class="work">Time Management</a></label>
+                        <label><a href="https://calculatorp5.ccbp.tech" target="_blank" class="work">CGPA Calculator</a></label>
+                        <label><a href="https://pranaystatic6.ccbp.tech" target="_blank" class="work">Podcast Page</a></label>
+                            <!--<label><a href="projects.html" target="_blank" class="work">More...</a></label>-->
+                    </div>
+                    <div class="project-box">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Mega  Workshops</h3>
+                        <label><a href="https://pranaygenai974.ccbp.tech/" target="_blank">Generative Ai</a></label>
+                        <label><a href="https://d2unk16ovapme2.cloudfront.net/#followUsSection/" target="_blank" class="">Aws Workshop</a></label>
+                        <label>PowerBI Dashboard</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="fa-solid fa-award"></i>
+                        <h3>Certificates</h3>
+                        <label>Static Web Developer</label>
+                        <label>Python</label>
+                        <label>java</label>
+                        <label>c</label>
+                    </div>
+                   </div>
+                </section>
+                <!--contact box-->
+                <section class="section" id="contact">
+                    <div class="top-header">
+                        <h1>Let's work Together</h1>
+                        <span>"I'm eager to join an innovative team to co-create cutting-edge projects that revolutionize technology."
+                        </span>
+                    </div>
+                    <!----
+                    <div class="row">
+                        <div class="col">
+                            <div class="contact-info">
+                                <h2>Find me<i class="fa fa-solid-right-down"></i></h2>
+                                <p><i class="fa fa-envelope"></i> Email:-avaduthapranay053@gmail.com</p>
+                                <p><i class="fa fa-phone"></i> phone:+91 8074893273</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-control">
+                                <div class="form-inputs">
+                                    <input type="text" class="input-field" placeholder="your Name">
+                                    <input type="text" class="input-field" placeholder="your Email">
+                                </div>
+                                <div class="text-area">
+                                    <input type="text" class="input-subject" placeholder="subject">
+                                    <textarea placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-button">
+                                     <button class="btn">Send <i class="fa-solid fa-paper-plane"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                        <div class="contact-container">
+                          <div class="contact-info">
+                            <h2>Find me</h2>
+                            <p><i class="fa fa-envelope"></i> Email:- avaduthapranay053@gmail.com</p>
+                            <p><i class="fa fa-phone"></i> Phone: +91 8074893273</p>
+                          </div>
+                        </div>
+                      
+                </section>
+            </main>
+            <!--footer-->
+            <footer>
+                <div class="d-flex flex-row justify-content-center">
+                <div class="middle-footer">
+                <div class="footer-socil-icons">
+                    <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="icon"><i class="fa-brands fa-github"></i></div>
+                    <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                </div>
+            </div>
+        </div>
+                <div class="bottom-footer">
+                    <p>copyright &copy; <a href="#home" style="text-decoration: none">PranayAvadutha </a>All rights reserved 2024</p>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
